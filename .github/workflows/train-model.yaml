@@ -42,4 +42,4 @@ jobs:
           csv2md reports/feat_imp.csv >> report.md
           echo "## Confusion Matrix" >> report.md
           cml publish reports/figures/cm.png --md >> report.md
-          cml send-comment report.md
+          cml comment create report.md
